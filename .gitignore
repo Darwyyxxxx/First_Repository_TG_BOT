@@ -19,6 +19,9 @@ venv/
 __pycache__/
 *.pyc
 
+#Optional: if tg_game_bot_s_doski is not meant to be tracked
+tg_game_bot_s_doski/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
