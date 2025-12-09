@@ -1,0 +1,8 @@
+venv/
+.venv/
+.env
+.mypy_cache/
+__pycache__/
+.vscode/
+.DS_Store
+.ruff_cache/

@@ -37,7 +37,7 @@ def prepare_book(path: str,page_size:int = 1050) -> dict[int,str]:
         with open(file=os.path.normpath(path), mode="r", encoding="utf-8") as file:
             text = file.read()
     except Exception as e:
-        logger.error("Error reading a book: %s", e)
+        logger.error(f"Error reading a book: %s ", e)
         raise e
 
     book ={}

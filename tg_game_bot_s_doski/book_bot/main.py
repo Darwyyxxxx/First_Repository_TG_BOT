@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import os
 
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
@@ -26,13 +27,13 @@ async def main():
 
     bot = Bot(
         token = config.bot.token,
-        default=DefaultBotProperties(parse_mode = ParseMode),
+        default=DefaultBotProperties(parse_mode = ParseMode.HTML),
 
     )
     dp = Dispatcher()
 
     logger.info("Preparing book")
-    book = prepare_book("book/book.txt")
+    book = prepare_book("tg_game_bot_s_doski/book_bot/book/book.txt")
     logger.info("The book is uploaded. Total pages: %d", len(book))
 
 
